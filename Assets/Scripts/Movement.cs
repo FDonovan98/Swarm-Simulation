@@ -33,7 +33,6 @@ public class Movement : AbstractVisionCone
 
     private void OnTriggerStay(Collider other)
     {
-        other = visionSphere.GetComponent<Collider>();
         safePath = GetPathAwayFromObjects(fov, angle, visionRange);
 
         Debug.DrawRay(transform.position, safePath * visionRange, Color.yellow);
@@ -41,7 +40,6 @@ public class Movement : AbstractVisionCone
 
     private void OnTriggerEnter(Collider other)
     {
-        other = visionSphere.GetComponent<Collider>();
         safePath = GetPathAwayFromObjects(fov, angle, visionRange);
 
         Debug.DrawRay(transform.position, safePath * visionRange, Color.yellow);

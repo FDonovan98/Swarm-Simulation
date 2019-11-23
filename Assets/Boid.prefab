@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
-  turnSpeed: 0.01
+  turnSpeed: 0.03
   visionRange: 3
   angle: 25
   fov: 50
